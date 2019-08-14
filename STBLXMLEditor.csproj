@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2748CA90-9B7B-4367-9F2B-AFDD29B17FBF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>STBLXMLEditor</RootNamespace>
+    <AssemblyName>STBLXMLEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>embedded</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>STBLXMLEditor.Entry</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Editor\Editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editor\Editor.designer.cs">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry.cs" />
+    <Compile Include="EntryBrowser\EntryBrowserFilter.cs" />
+    <Compile Include="EntryBrowser\EntryBrowser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EntryBrowser\EntryBrowser.Designer.cs">
+      <DependentUpon>EntryBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Error\Error.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Error\Error.Designer.cs">
+      <DependentUpon>Error.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms.cs" />
+    <Compile Include="IO.cs" />
+    <Compile Include="Localization.cs" />
+    <Compile Include="Loading.cs" />
+    <Compile Include="MergeWith\MergeWith.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MergeWith\MergeWith.Designer.cs">
+      <DependentUpon>MergeWith.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetaData\MetaData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetaData\MetaData.Designer.cs">
+      <DependentUpon>MetaData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Picker\Picker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Picker\Picker.Designer.cs">
+      <DependentUpon>Picker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Selector\Selector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Selector\Selector.Designer.cs">
+      <DependentUpon>Selector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Selector\SelectorFilterOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Selector\SelectorFilterOptions.Designer.cs">
+      <DependentUpon>SelectorFilterOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Selector\SelectorNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Selector\SelectorNew.Designer.cs">
+      <DependentUpon>SelectorNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendTo\SendTo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendTo\SendTo.Designer.cs">
+      <DependentUpon>SendTo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STBL.cs" />
+    <Compile Include="Tools.cs" />
+    <Compile Include="Translator\Translator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Translator\Translator.Designer.cs">
+      <DependentUpon>Translator.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Editor\Editor.resx">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntryBrowser\EntryBrowser.resx">
+      <DependentUpon>EntryBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Error\Error.resx">
+      <DependentUpon>Error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MergeWith\MergeWith.resx">
+      <DependentUpon>MergeWith.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetaData\MetaData.resx">
+      <DependentUpon>MetaData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Picker\Picker.resx">
+      <DependentUpon>Picker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resources\Strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Selector\Selector.resx">
+      <DependentUpon>Selector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Selector\SelectorFilterOptions.resx">
+      <DependentUpon>SelectorFilterOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Selector\SelectorNew.resx">
+      <DependentUpon>SelectorNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendTo\SendTo.resx">
+      <DependentUpon>SendTo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Translator\Translator.resx">
+      <DependentUpon>Translator.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
