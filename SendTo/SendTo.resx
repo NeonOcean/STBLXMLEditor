@@ -133,7 +133,7 @@
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="FormCancelButton.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+    <value>4</value>
   </data>
   <data name="FormCancelButton.Text" xml:space="preserve">
     <value>Cancel</value>
@@ -163,7 +163,7 @@
     <value>100, 30</value>
   </data>
   <data name="FormOkButton.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+    <value>3</value>
   </data>
   <data name="FormOkButton.Text" xml:space="preserve">
     <value>Ok</value>
@@ -193,7 +193,7 @@
     <value>36, 23</value>
   </data>
   <data name="FilePathSelectButton.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+    <value>1</value>
   </data>
   <data name="FilePathSelectButton.Text" xml:space="preserve">
     <value>...</value>
@@ -217,7 +217,7 @@
     <value>318, 20</value>
   </data>
   <data name="FilePathTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;FilePathTextBox.Name" xml:space="preserve">
     <value>FilePathTextBox</value>
@@ -244,7 +244,7 @@
     <value>120, 30</value>
   </data>
   <data name="LanguagesButton.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+    <value>2</value>
   </data>
   <data name="LanguagesButton.Text" xml:space="preserve">
     <value>Select Languages</value>

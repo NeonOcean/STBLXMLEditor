@@ -1,7 +1,6 @@
 ﻿using System;
 using System.IO;
 using System.Windows.Forms;
-using System.Diagnostics;
 
 namespace STBLXMLEditor {
 	public partial class Selector : Form {
@@ -26,22 +25,10 @@ namespace STBLXMLEditor {
 			EntryBrowser.SelectedCountUpdate += EntryBrowser_SelectedCountUpdate;
 		}
 
-		public static bool ShowConfirmUnsavedExitDialog () {
-			MessageBoxButtons dialogButtons = MessageBoxButtons.YesNo;
-			DialogResult dialogResult = MessageBox.Show(Localization.GetString("ConfirmUnsavedExitText"), Localization.GetString("ConfirmUnsavedTitle"), dialogButtons, MessageBoxIcon.Warning);
-			return (dialogResult == DialogResult.Yes) ? true : false;
-		}
-
-		public static bool ShowConfirmUnsavedNewFileDialog () {
-			MessageBoxButtons dialogButtons = MessageBoxButtons.YesNo;
-			DialogResult dialogResult = MessageBox.Show(Localization.GetString("ConfirmUnsavedNewFileText"), Localization.GetString("ConfirmUnsavedTitle"), dialogButtons, MessageBoxIcon.Warning);
-			return (dialogResult == DialogResult.Yes) ? true : false;
-		}
-
-		public static bool ShowConfirmUnsavedOpenFileDialog () {
-			MessageBoxButtons dialogButtons = MessageBoxButtons.YesNo;
-			DialogResult dialogResult = MessageBox.Show(Localization.GetString("ConfirmUnsavedOpenFileText"), Localization.GetString("ConfirmUnsavedTitle"), dialogButtons, MessageBoxIcon.Warning);
-			return (dialogResult == DialogResult.Yes) ? true : false;
+		public static DialogResult ShowUnsavedDialog () {
+			MessageBoxButtons dialogButtons = MessageBoxButtons.YesNoCancel;
+			DialogResult dialogResult = MessageBox.Show(Localization.GetString("UnsavedDialogText"), Localization.GetString("UnsavedDialogTitle"), dialogButtons, MessageBoxIcon.Question);
+			return dialogResult;
 		}
 
 		public static void ShowOpenFailureDialog (Exception failureException) {
@@ -58,7 +45,7 @@ namespace STBLXMLEditor {
 			string FormTitle = "STBL XML Editor";
 
 			if(Loading.FilePath != null) {
-				FormTitle = Path.GetFileName(Loading.FilePath) + " - " + FormTitle;
+				FormTitle = Loading.FileName + " - " + FormTitle;
 
 				if(Loading.IsDirty) {
 					FormTitle = "*" + FormTitle;
@@ -80,27 +67,31 @@ namespace STBLXMLEditor {
 			FormStatusStripSelectedCount.Text = string.Format(Localization.GetString(statusBarSelectedTextIdentifier), EntryBrowser.GetSelectedItemCount());
 		}
 
-		private void Selector_FormClosing (object sender, FormClosingEventArgs e) {
+		public bool NewFile () {
 			if(Loading.IsDirty) {
-				e.Cancel = !ShowConfirmUnsavedExitDialog();
-			}
-		}
+				DialogResult unsavedDialogResult = ShowUnsavedDialog();
 
-		private void MenuStripNewItem_Click (object sender, EventArgs e) {
-			if(Loading.IsDirty) {
-				if(!ShowConfirmUnsavedNewFileDialog()) {
-					return;
+				if(unsavedDialogResult == DialogResult.Yes) {
+					SaveFile();
+				} else if(unsavedDialogResult == DialogResult.Cancel) {
+					return false;
 				}
 			}
 
 			Loading.NewFile();
 			EntryBrowser.SetupRows();
+
+			return true;
 		}
 
-		private void MenuStripOpenItem_Click (object sender, EventArgs e) {
+		public bool OpenFile () {
 			if(Loading.IsDirty) {
-				if(!ShowConfirmUnsavedOpenFileDialog()) {
-					return;
+				DialogResult unsavedDialogResult = ShowUnsavedDialog();
+
+				if(unsavedDialogResult == DialogResult.Yes) {
+					SaveFile();
+				} else if(unsavedDialogResult == DialogResult.Cancel) {
+					return false;
 				}
 			}
 
@@ -109,7 +100,7 @@ namespace STBLXMLEditor {
 			}
 
 			if(OpenSTBLXMLDialog.ShowDialog() == DialogResult.Cancel) {
-				return;
+				return false;
 			}
 
 			string openFilePath = OpenSTBLXMLDialog.FileName;
@@ -124,9 +115,11 @@ namespace STBLXMLEditor {
 			}
 
 			EntryBrowser.SetupRows();
+
+			return true;
 		}
 
-		private void MenuStripSaveItem_Click (object sender, EventArgs e) {
+		public void SaveFile () {
 			string saveFilePath = Loading.FilePath;
 
 			if(saveFilePath == null) {
@@ -147,7 +140,7 @@ namespace STBLXMLEditor {
 			}
 		}
 
-		private void MenuStripSaveAsItem_Click (object sender, EventArgs e) {
+		public void SaveAsFile () {
 			if(Loading.FilePath != null) {
 				SaveSTBLXMLDialog.InitialDirectory = Path.GetDirectoryName(Loading.FilePath);
 				SaveSTBLXMLDialog.FileName = Path.GetFileName(Loading.FilePath);
@@ -167,6 +160,40 @@ namespace STBLXMLEditor {
 			} catch(Exception saveException) {
 				ShowSaveFailureDialog(saveException);
 			}
+		}
+
+		public bool Exit () {
+			if(Loading.IsDirty) {
+				DialogResult unsavedDialogResult = ShowUnsavedDialog();
+
+				if(unsavedDialogResult == DialogResult.Yes) {
+					SaveFile();
+				} else if(unsavedDialogResult == DialogResult.Cancel) {
+					return false;
+				}
+			}
+
+			return true;
+		}
+
+		private void Selector_FormClosing (object sender, FormClosingEventArgs e) {
+			e.Cancel = !Exit();
+		}
+
+		private void MenuStripNewItem_Click (object sender, EventArgs e) {
+			NewFile();
+		}
+
+		private void MenuStripOpenItem_Click (object sender, EventArgs e) {
+			OpenFile();
+		}
+
+		private void MenuStripSaveItem_Click (object sender, EventArgs e) {
+			SaveFile();
+		}
+
+		private void MenuStripSaveAsItem_Click (object sender, EventArgs e) {
+			SaveAsFile();
 		}
 
 		private void MenuStripFileMergeItem_Click (object sender, EventArgs e) {

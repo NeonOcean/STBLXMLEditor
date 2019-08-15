@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.IO;
 
 namespace STBLXMLEditor {
 	public static class Loading {
@@ -11,6 +12,16 @@ namespace STBLXMLEditor {
 		public static string FilePath {
 			get; private set;
 		} = null;
+
+		public static string FileName {
+			get {
+				if(FilePath == null) {
+					return null;
+				}
+
+				return Path.GetFileName(FilePath);
+			}
+		}
 
 		public static bool IsDirty {
 			get {

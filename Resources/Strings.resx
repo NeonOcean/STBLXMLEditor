@@ -131,18 +131,6 @@
 
 Valid formatting placeholder are {0}, {0:Normal}, {0:Spaced}, {0:Underscored}, {0:Hyphenated}.</value>
   </data>
-  <data name="ConfirmUnsavedExitText" xml:space="preserve">
-    <value>There one or more unsaved changes, are you sure you want to exit now?</value>
-  </data>
-  <data name="ConfirmUnsavedNewFileText" xml:space="preserve">
-    <value>There one or more unsaved changes, are you sure you want to start a new file?</value>
-  </data>
-  <data name="ConfirmUnsavedOpenFileText" xml:space="preserve">
-    <value>There one or more unsaved changes, are you sure you want to open another file?</value>
-  </data>
-  <data name="ConfirmUnsavedTitle" xml:space="preserve">
-    <value>Warning: Unsaved Changes</value>
-  </data>
   <data name="CzechLanguageName" xml:space="preserve">
     <value>Czech</value>
   </data>
@@ -229,6 +217,12 @@ Valid formatting placeholder are {0}, {0:Normal}, {0:Spaced}, {0:Underscored}, {
   </data>
   <data name="ThaiLanguageName" xml:space="preserve">
     <value>Thai</value>
+  </data>
+  <data name="UnsavedDialogText" xml:space="preserve">
+    <value>Save changes?</value>
+  </data>
+  <data name="UnsavedDialogTitle" xml:space="preserve">
+    <value>Save</value>
   </data>
   <data name="WarningMessageTitle" xml:space="preserve">
     <value>Warning</value>

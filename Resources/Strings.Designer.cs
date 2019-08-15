@@ -99,42 +99,6 @@ namespace STBLXMLEditor.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to There one or more unsaved changes, are you sure you want to exit now?.
-        /// </summary>
-        internal static string ConfirmUnsavedExitText {
-            get {
-                return ResourceManager.GetString("ConfirmUnsavedExitText", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to There one or more unsaved changes, are you sure you want to start a new file?.
-        /// </summary>
-        internal static string ConfirmUnsavedNewFileText {
-            get {
-                return ResourceManager.GetString("ConfirmUnsavedNewFileText", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to There one or more unsaved changes, are you sure you want to open another file?.
-        /// </summary>
-        internal static string ConfirmUnsavedOpenFileText {
-            get {
-                return ResourceManager.GetString("ConfirmUnsavedOpenFileText", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Warning: Unsaved Changes.
-        /// </summary>
-        internal static string ConfirmUnsavedTitle {
-            get {
-                return ResourceManager.GetString("ConfirmUnsavedTitle", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Czech.
         /// </summary>
         internal static string CzechLanguageName {
@@ -392,6 +356,24 @@ namespace STBLXMLEditor.Resources {
         internal static string ThaiLanguageName {
             get {
                 return ResourceManager.GetString("ThaiLanguageName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save changes?.
+        /// </summary>
+        internal static string UnsavedDialogText {
+            get {
+                return ResourceManager.GetString("UnsavedDialogText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save.
+        /// </summary>
+        internal static string UnsavedDialogTitle {
+            get {
+                return ResourceManager.GetString("UnsavedDialogTitle", resourceCulture);
             }
         }
         

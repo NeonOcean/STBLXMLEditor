@@ -58,7 +58,6 @@
 			this.KeyHexadecimalTextBox.BackColor = System.Drawing.SystemColors.Window;
 			resources.ApplyResources(this.KeyHexadecimalTextBox, "KeyHexadecimalTextBox");
 			this.KeyHexadecimalTextBox.Name = "KeyHexadecimalTextBox";
-			this.KeyHexadecimalTextBox.ShortcutsEnabled = false;
 			this.KeyHexadecimalTextBox.TextChanged += new System.EventHandler(this.KeyHexadecimalTextBox_TextChanged);
 			this.KeyHexadecimalTextBox.Leave += new System.EventHandler(this.KeyHexadecimalTextBox_Leave);
 			// 
@@ -66,7 +65,6 @@
 			// 
 			resources.ApplyResources(this.KeyDecimalTextBox, "KeyDecimalTextBox");
 			this.KeyDecimalTextBox.Name = "KeyDecimalTextBox";
-			this.KeyDecimalTextBox.ShortcutsEnabled = false;
 			this.KeyDecimalTextBox.TextChanged += new System.EventHandler(this.KeyDecimalTextBox_TextChanged);
 			this.KeyDecimalTextBox.Leave += new System.EventHandler(this.KeyDecimalTextBox_Leave);
 			// 
@@ -84,7 +82,6 @@
 			// 
 			resources.ApplyResources(this.IdentifierTextBox, "IdentifierTextBox");
 			this.IdentifierTextBox.Name = "IdentifierTextBox";
-			this.IdentifierTextBox.ShortcutsEnabled = false;
 			// 
 			// FormCancelButton
 			// 
