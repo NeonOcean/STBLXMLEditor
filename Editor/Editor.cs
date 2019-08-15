@@ -159,7 +159,7 @@ namespace STBLXMLEditor {
 		}
 
 		private void KeyHexadecimalTextBox_Leave (object sender, EventArgs e) {
-			FinalizeUIntDecimalTextBox(KeyHexadecimalTextBox, ref LastKeyValue, KeyDecimalTextBox);
+			FinalizeUIntHexadecimalTextBox(KeyHexadecimalTextBox, ref LastKeyValue, KeyDecimalTextBox);
 		}
 
 		private void KeyRandomizeButton_Click (object sender, EventArgs e) {
