@@ -138,6 +138,8 @@ namespace STBLXMLEditor {
 			} catch(Exception saveException) {
 				ShowSaveFailureDialog(saveException);
 			}
+
+			EntryBrowser.RefreshItems();
 		}
 
 		public void SaveAsFile () {
@@ -160,6 +162,8 @@ namespace STBLXMLEditor {
 			} catch(Exception saveException) {
 				ShowSaveFailureDialog(saveException);
 			}
+
+			EntryBrowser.RefreshItems();
 		}
 
 		public bool Exit () {
