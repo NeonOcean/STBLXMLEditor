@@ -276,6 +276,9 @@
   <data name="&gt;&gt;AddEntryButton.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="FilterOptionsButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="FilterOptionsButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -302,6 +305,9 @@
   </data>
   <data name="&gt;&gt;FilterOptionsButton.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="FilterActiveCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="FilterActiveCheckBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -363,6 +369,9 @@
   <data name="&gt;&gt;FormStatusStrip.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="EntryBrowser.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
   <data name="EntryBrowser.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 125</value>
   </data>
@@ -376,7 +385,7 @@
     <value>EntryBrowser</value>
   </data>
   <data name="&gt;&gt;EntryBrowser.Type" xml:space="preserve">
-    <value>STBLXMLEditor.EntryBrowser, STBLXMLEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>STBLXMLEditor.EntryBrowser, STBLXMLEditor, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;EntryBrowser.Parent" xml:space="preserve">
     <value>$this</value>
@@ -392,6 +401,9 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>984, 586</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>800, 400</value>

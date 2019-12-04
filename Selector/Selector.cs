@@ -180,6 +180,10 @@ namespace STBLXMLEditor {
 			return true;
 		}
 
+		private void Selector_Load (object sender, EventArgs e) {
+			UpdateFormTitle();
+		}
+
 		private void Selector_FormClosing (object sender, FormClosingEventArgs e) {
 			e.Cancel = !Exit();
 		}

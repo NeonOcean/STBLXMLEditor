@@ -223,6 +223,7 @@
 			this.Name = "Selector";
 			this.ShowIcon = false;
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Selector_FormClosing);
+			this.Load += new System.EventHandler(this.Selector_Load);
 			this.MenuStrip.ResumeLayout(false);
 			this.MenuStrip.PerformLayout();
 			this.FormStatusStrip.ResumeLayout(false);
