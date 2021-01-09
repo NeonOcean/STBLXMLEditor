@@ -28,7 +28,7 @@ namespace STBLXMLEditor {
 
 		public static void ShowNoLanguagesSelectedDialog () {
 			MessageBoxButtons dialogButtons = MessageBoxButtons.OK;
-			MessageBox.Show(Localization.GetString("ImportWithNoLanguagesSelectedText"), Localization.GetString("WarningMessageTitle"), dialogButtons, MessageBoxIcon.Warning);
+			MessageBox.Show(Localization.GetString("ImportNoLanguagesSelectedText"), Localization.GetString("WarningMessageTitle"), dialogButtons, MessageBoxIcon.Warning);
 		}
 
 		public static void ShowOpenFailureDialog (Exception failureException) {
@@ -81,7 +81,7 @@ namespace STBLXMLEditor {
 			STBLXMLFile mergingFile = null;
 
 			try {
-				mergingFile = ImportExport.ImportFromPackageFile(FilePathTextBox.Text);
+				mergingFile = ImportExport.ImportFromPackageFile(FilePathTextBox.Text, SelectedLanguages);
 			} catch(Exception readException) {
 				ShowOpenFailureDialog(readException);
 				DialogResult = DialogResult.None;
@@ -96,7 +96,6 @@ namespace STBLXMLEditor {
 				}
 			}
 
-			Dictionary<string, Dictionary<STBL.Languages, string>> mergingLanguagesIdentifier = new Dictionary<string, Dictionary<STBL.Languages, string>>();
 			Dictionary<uint, Dictionary<STBL.Languages, string>> mergingLanguagesKey = new Dictionary<uint, Dictionary<STBL.Languages, string>>();
 
 			foreach(STBLXMLEntry mergingEntry in mergingFile.Entries) {
@@ -125,8 +124,6 @@ namespace STBLXMLEditor {
 			}
 
 			List<uint> unmergedKeys = mergingLanguagesKey.Keys.ToList();
-			List<string> unmergedIdentifiers = mergingLanguagesIdentifier.Keys.ToList();
-
 			
 			foreach(STBLXMLEntry existingEntry in Loading.Data.Entries) {
 				if(!mergingLanguagesKey.ContainsKey(existingEntry.Key)) {

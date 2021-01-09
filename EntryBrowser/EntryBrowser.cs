@@ -277,9 +277,15 @@ namespace STBLXMLEditor {
 				return;
 			}
 
-			Editor editorDialog = new Editor(stblEntry: FindEntry(BrowserGridView.Rows[e.RowIndex]));
-			editorDialog.ShowDialog();
-			RefreshItems();
+			if(((Selector)Parent).DoubleClickModeOpenEditorButton.Checked) {
+				Editor editorDialog = new Editor(stblEntry: FindEntry(BrowserGridView.Rows[e.RowIndex]));
+				editorDialog.ShowDialog();
+				RefreshItems();
+			} else {
+				Translator translatorDialog = new Translator(stblEntry: FindEntry(BrowserGridView.Rows[e.RowIndex]));
+				translatorDialog.ShowDialog();
+				RefreshItems();
+			}
 		}
 
 		private void BrowserGridView_SelectionChanged (object sender, EventArgs e) {

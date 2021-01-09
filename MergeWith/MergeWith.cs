@@ -28,7 +28,7 @@ namespace STBLXMLEditor {
 
 		public static void ShowNoLanguagesSelectedDialog () {
 			MessageBoxButtons dialogButtons = MessageBoxButtons.OK;
-			DialogResult dialogResult = MessageBox.Show(Localization.GetString("MergeWithNoLanguagesSelectedText"), Localization.GetString("WarningMessageTitle"), dialogButtons, MessageBoxIcon.Warning);
+			DialogResult dialogResult = MessageBox.Show(Localization.GetString("MergeNoLanguagesSelectedText"), Localization.GetString("WarningMessageTitle"), dialogButtons, MessageBoxIcon.Warning);
 		}
 
 		public static void ShowOpenFailureDialog (Exception failureException) {

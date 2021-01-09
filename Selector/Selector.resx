@@ -120,11 +120,42 @@
   <metadata name="MenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="MenuStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="MenuStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>984, 24</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="MenuStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip.Name" xml:space="preserve">
+    <value>MenuStrip</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="MenuStripFileItem.ShortcutKeyDisplayString" xml:space="preserve">
+    <value>F</value>
+  </data>
+  <data name="MenuStripFileItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 20</value>
+  </data>
+  <data name="MenuStripFileItem.Text" xml:space="preserve">
+    <value>File</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="MenuStripFileNewItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Ctrl+N</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="MenuStripFileNewItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>209, 22</value>
   </data>
@@ -148,6 +179,12 @@
   </data>
   <data name="MenuStripFileSaveItem.Text" xml:space="preserve">
     <value>Save</value>
+  </data>
+  <data name="MenuStripFileSaveAsItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 22</value>
+  </data>
+  <data name="MenuStripFileSaveAsItem.Text" xml:space="preserve">
+    <value>Save As...</value>
   </data>
   <data name="MenuStripFileSpearator1.Size" type="System.Drawing.Size, System.Drawing">
     <value>206, 6</value>
@@ -191,14 +228,11 @@
   <data name="MenuStripFileExitItem.Text" xml:space="preserve">
     <value>Exit</value>
   </data>
-  <data name="MenuStripFileItem.ShortcutKeyDisplayString" xml:space="preserve">
-    <value>F</value>
+  <data name="MenuStripEditItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 20</value>
   </data>
-  <data name="MenuStripFileItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 20</value>
-  </data>
-  <data name="MenuStripFileItem.Text" xml:space="preserve">
-    <value>File</value>
+  <data name="MenuStripEditItem.Text" xml:space="preserve">
+    <value>Edit</value>
   </data>
   <data name="MenuStripEditSelectAllItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Ctrl+A</value>
@@ -214,34 +248,6 @@
   </data>
   <data name="MenuStripEditDeselectAllItem.Text" xml:space="preserve">
     <value>Deselect All</value>
-  </data>
-  <data name="MenuStripEditItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 20</value>
-  </data>
-  <data name="MenuStripEditItem.Text" xml:space="preserve">
-    <value>Edit</value>
-  </data>
-  <data name="MenuStrip.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="MenuStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>984, 24</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="MenuStrip.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip.Name" xml:space="preserve">
-    <value>MenuStrip</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip.ZOrder" xml:space="preserve">
-    <value>5</value>
   </data>
   <metadata name="OpenSTBLXMLDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>125, 17</value>
@@ -280,7 +286,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;AddEntryButton.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="FilterOptionsButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -310,7 +316,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;FilterOptionsButton.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="FilterActiveCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -343,17 +349,11 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;FilterActiveCheckBox.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <metadata name="FormStatusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>457, 17</value>
   </metadata>
-  <data name="FormStatusStripItemsCount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 17</value>
-  </data>
-  <data name="FormStatusStripSelectedCount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 17</value>
-  </data>
   <data name="FormStatusStrip.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 564</value>
   </data>
@@ -373,7 +373,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;FormStatusStrip.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
+  </data>
+  <data name="FormStatusStripItemsCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 17</value>
+  </data>
+  <data name="FormStatusStripSelectedCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 17</value>
   </data>
   <metadata name="ImportFromPackageFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>596, 17</value>
@@ -386,6 +392,126 @@
   </metadata>
   <data name="ExportToPackgeFilesDialog.Description" xml:space="preserve">
     <value>Select a directory in which to create the STBL package files.</value>
+  </data>
+  <data name="DoubleClickModeOpenTranslatorButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="DoubleClickModeOpenTranslatorButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DoubleClickModeOpenTranslatorButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="DoubleClickModeOpenTranslatorButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 3</value>
+  </data>
+  <data name="DoubleClickModeOpenTranslatorButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 17</value>
+  </data>
+  <data name="DoubleClickModeOpenTranslatorButton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="DoubleClickModeOpenTranslatorButton.Text" xml:space="preserve">
+    <value>Open Translator</value>
+  </data>
+  <data name="&gt;&gt;DoubleClickModeOpenTranslatorButton.Name" xml:space="preserve">
+    <value>DoubleClickModeOpenTranslatorButton</value>
+  </data>
+  <data name="&gt;&gt;DoubleClickModeOpenTranslatorButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DoubleClickModeOpenTranslatorButton.Parent" xml:space="preserve">
+    <value>DoubleClickModeBox</value>
+  </data>
+  <data name="&gt;&gt;DoubleClickModeOpenTranslatorButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DoubleClickModeOpenEditorButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="DoubleClickModeOpenEditorButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DoubleClickModeOpenEditorButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="DoubleClickModeOpenEditorButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 3</value>
+  </data>
+  <data name="DoubleClickModeOpenEditorButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 17</value>
+  </data>
+  <data name="DoubleClickModeOpenEditorButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="DoubleClickModeOpenEditorButton.Text" xml:space="preserve">
+    <value>Open Editor</value>
+  </data>
+  <data name="&gt;&gt;DoubleClickModeOpenEditorButton.Name" xml:space="preserve">
+    <value>DoubleClickModeOpenEditorButton</value>
+  </data>
+  <data name="&gt;&gt;DoubleClickModeOpenEditorButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DoubleClickModeOpenEditorButton.Parent" xml:space="preserve">
+    <value>DoubleClickModeBox</value>
+  </data>
+  <data name="&gt;&gt;DoubleClickModeOpenEditorButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="DoubleClickModeLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="DoubleClickModeLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DoubleClickModeLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="DoubleClickModeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 5</value>
+  </data>
+  <data name="DoubleClickModeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 13</value>
+  </data>
+  <data name="DoubleClickModeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="DoubleClickModeLabel.Text" xml:space="preserve">
+    <value>On Double Click:</value>
+  </data>
+  <data name="&gt;&gt;DoubleClickModeLabel.Name" xml:space="preserve">
+    <value>DoubleClickModeLabel</value>
+  </data>
+  <data name="&gt;&gt;DoubleClickModeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DoubleClickModeLabel.Parent" xml:space="preserve">
+    <value>DoubleClickModeBox</value>
+  </data>
+  <data name="&gt;&gt;DoubleClickModeLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="DoubleClickModeBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 96</value>
+  </data>
+  <data name="DoubleClickModeBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>285, 23</value>
+  </data>
+  <data name="DoubleClickModeBox.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;DoubleClickModeBox.Name" xml:space="preserve">
+    <value>DoubleClickModeBox</value>
+  </data>
+  <data name="&gt;&gt;DoubleClickModeBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DoubleClickModeBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DoubleClickModeBox.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="EntryBrowser.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -409,7 +535,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;EntryBrowser.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -419,6 +545,9 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>984, 586</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>800, 400</value>
@@ -450,16 +579,16 @@
   <data name="&gt;&gt;MenuStripFileSaveItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;MenuStripFileSaveAsItem.Name" xml:space="preserve">
+    <value>MenuStripFileSaveAsItem</value>
+  </data>
+  <data name="&gt;&gt;MenuStripFileSaveAsItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;MenuStripFileSpearator1.Name" xml:space="preserve">
     <value>MenuStripFileSpearator1</value>
   </data>
   <data name="&gt;&gt;MenuStripFileSpearator1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MenuStripFileSpearator2.Name" xml:space="preserve">
-    <value>MenuStripFileSpearator2</value>
-  </data>
-  <data name="&gt;&gt;MenuStripFileSpearator2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;MenuStripFileEditMetaDataItem.Name" xml:space="preserve">
@@ -468,10 +597,10 @@
   <data name="&gt;&gt;MenuStripFileEditMetaDataItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;MenuStripFileSpearator3.Name" xml:space="preserve">
-    <value>MenuStripFileSpearator3</value>
+  <data name="&gt;&gt;MenuStripFileSpearator2.Name" xml:space="preserve">
+    <value>MenuStripFileSpearator2</value>
   </data>
-  <data name="&gt;&gt;MenuStripFileSpearator3.Type" xml:space="preserve">
+  <data name="&gt;&gt;MenuStripFileSpearator2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;MenuStripFileMergeItem.Name" xml:space="preserve">
@@ -491,6 +620,12 @@
   </data>
   <data name="&gt;&gt;MenuStripFileExportToPackageFilesItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuStripFileSpearator3.Name" xml:space="preserve">
+    <value>MenuStripFileSpearator3</value>
+  </data>
+  <data name="&gt;&gt;MenuStripFileSpearator3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;MenuStripFileExitItem.Name" xml:space="preserve">
     <value>MenuStripFileExitItem</value>

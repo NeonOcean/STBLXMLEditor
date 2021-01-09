@@ -29,13 +29,14 @@
 			this.MenuStripFileNewItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.MenuStripFileOpenItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.MenuStripFileSaveItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.MenuStripFileSaveAsItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.MenuStripFileSpearator1 = new System.Windows.Forms.ToolStripSeparator();
-			this.MenuStripFileSpearator2 = new System.Windows.Forms.ToolStripSeparator();
 			this.MenuStripFileEditMetaDataItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.MenuStripFileSpearator3 = new System.Windows.Forms.ToolStripSeparator();
+			this.MenuStripFileSpearator2 = new System.Windows.Forms.ToolStripSeparator();
 			this.MenuStripFileMergeItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.MenuStripFileImportFromPackageFileItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.MenuStripFileExportToPackageFilesItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.MenuStripFileSpearator3 = new System.Windows.Forms.ToolStripSeparator();
 			this.MenuStripFileExitItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.MenuStripEditItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.MenuStripEditSelectAllItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,9 +51,14 @@
 			this.FormStatusStripSelectedCount = new System.Windows.Forms.ToolStripStatusLabel();
 			this.ImportFromPackageFileDialog = new System.Windows.Forms.OpenFileDialog();
 			this.ExportToPackgeFilesDialog = new System.Windows.Forms.FolderBrowserDialog();
+			this.DoubleClickModeBox = new System.Windows.Forms.Panel();
+			this.DoubleClickModeLabel = new System.Windows.Forms.Label();
+			this.DoubleClickModeOpenEditorButton = new System.Windows.Forms.RadioButton();
+			this.DoubleClickModeOpenTranslatorButton = new System.Windows.Forms.RadioButton();
 			this.EntryBrowser = new STBLXMLEditor.EntryBrowser();
 			this.MenuStrip.SuspendLayout();
 			this.FormStatusStrip.SuspendLayout();
+			this.DoubleClickModeBox.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// MenuStrip
@@ -70,6 +76,7 @@
             this.MenuStripFileNewItem,
             this.MenuStripFileOpenItem,
             this.MenuStripFileSaveItem,
+            this.MenuStripFileSaveAsItem,
             this.MenuStripFileSpearator1,
             this.MenuStripFileEditMetaDataItem,
             this.MenuStripFileSpearator2,
@@ -99,15 +106,16 @@
 			resources.ApplyResources(this.MenuStripFileSaveItem, "MenuStripFileSaveItem");
 			this.MenuStripFileSaveItem.Click += new System.EventHandler(this.MenuStripFileSaveItem_Click);
 			// 
+			// MenuStripFileSaveAsItem
+			// 
+			this.MenuStripFileSaveAsItem.Name = "MenuStripFileSaveAsItem";
+			resources.ApplyResources(this.MenuStripFileSaveAsItem, "MenuStripFileSaveAsItem");
+			this.MenuStripFileSaveAsItem.Click += new System.EventHandler(this.MenuStripFileSaveAsItem_Click);
+			// 
 			// MenuStripFileSpearator1
 			// 
 			this.MenuStripFileSpearator1.Name = "MenuStripFileSpearator1";
 			resources.ApplyResources(this.MenuStripFileSpearator1, "MenuStripFileSpearator1");
-			// 
-			// MenuStripFileSpearator2
-			// 
-			this.MenuStripFileSpearator2.Name = "MenuStripFileSpearator2";
-			resources.ApplyResources(this.MenuStripFileSpearator2, "MenuStripFileSpearator2");
 			// 
 			// MenuStripFileEditMetaDataItem
 			// 
@@ -115,10 +123,10 @@
 			resources.ApplyResources(this.MenuStripFileEditMetaDataItem, "MenuStripFileEditMetaDataItem");
 			this.MenuStripFileEditMetaDataItem.Click += new System.EventHandler(this.MenuStripFileEditMetaDataItem_Click);
 			// 
-			// MenuStripFileSpearator3
+			// MenuStripFileSpearator2
 			// 
-			this.MenuStripFileSpearator3.Name = "MenuStripFileSpearator3";
-			resources.ApplyResources(this.MenuStripFileSpearator3, "MenuStripFileSpearator3");
+			this.MenuStripFileSpearator2.Name = "MenuStripFileSpearator2";
+			resources.ApplyResources(this.MenuStripFileSpearator2, "MenuStripFileSpearator2");
 			// 
 			// MenuStripFileMergeItem
 			// 
@@ -137,6 +145,11 @@
 			this.MenuStripFileExportToPackageFilesItem.Name = "MenuStripFileExportToPackageFilesItem";
 			resources.ApplyResources(this.MenuStripFileExportToPackageFilesItem, "MenuStripFileExportToPackageFilesItem");
 			this.MenuStripFileExportToPackageFilesItem.Click += new System.EventHandler(this.MenuStripFileExportToPackageFilesItem_Click);
+			// 
+			// MenuStripFileSpearator3
+			// 
+			this.MenuStripFileSpearator3.Name = "MenuStripFileSpearator3";
+			resources.ApplyResources(this.MenuStripFileSpearator3, "MenuStripFileSpearator3");
 			// 
 			// MenuStripFileExitItem
 			// 
@@ -223,6 +236,34 @@
 			resources.ApplyResources(this.ExportToPackgeFilesDialog, "ExportToPackgeFilesDialog");
 			this.ExportToPackgeFilesDialog.RootFolder = System.Environment.SpecialFolder.MyComputer;
 			// 
+			// DoubleClickModeBox
+			// 
+			this.DoubleClickModeBox.Controls.Add(this.DoubleClickModeOpenTranslatorButton);
+			this.DoubleClickModeBox.Controls.Add(this.DoubleClickModeOpenEditorButton);
+			this.DoubleClickModeBox.Controls.Add(this.DoubleClickModeLabel);
+			resources.ApplyResources(this.DoubleClickModeBox, "DoubleClickModeBox");
+			this.DoubleClickModeBox.Name = "DoubleClickModeBox";
+			// 
+			// DoubleClickModeLabel
+			// 
+			resources.ApplyResources(this.DoubleClickModeLabel, "DoubleClickModeLabel");
+			this.DoubleClickModeLabel.Name = "DoubleClickModeLabel";
+			// 
+			// DoubleClickModeOpenEditorButton
+			// 
+			resources.ApplyResources(this.DoubleClickModeOpenEditorButton, "DoubleClickModeOpenEditorButton");
+			this.DoubleClickModeOpenEditorButton.Checked = true;
+			this.DoubleClickModeOpenEditorButton.Name = "DoubleClickModeOpenEditorButton";
+			this.DoubleClickModeOpenEditorButton.TabStop = true;
+			this.DoubleClickModeOpenEditorButton.UseVisualStyleBackColor = true;
+			// 
+			// DoubleClickModeOpenTranslatorButton
+			// 
+			resources.ApplyResources(this.DoubleClickModeOpenTranslatorButton, "DoubleClickModeOpenTranslatorButton");
+			this.DoubleClickModeOpenTranslatorButton.Name = "DoubleClickModeOpenTranslatorButton";
+			this.DoubleClickModeOpenTranslatorButton.TabStop = true;
+			this.DoubleClickModeOpenTranslatorButton.UseVisualStyleBackColor = true;
+			// 
 			// EntryBrowser
 			// 
 			resources.ApplyResources(this.EntryBrowser, "EntryBrowser");
@@ -232,6 +273,7 @@
 			// 
 			resources.ApplyResources(this, "$this");
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.Controls.Add(this.DoubleClickModeBox);
 			this.Controls.Add(this.EntryBrowser);
 			this.Controls.Add(this.FormStatusStrip);
 			this.Controls.Add(this.FilterActiveCheckBox);
@@ -247,6 +289,8 @@
 			this.MenuStrip.PerformLayout();
 			this.FormStatusStrip.ResumeLayout(false);
 			this.FormStatusStrip.PerformLayout();
+			this.DoubleClickModeBox.ResumeLayout(false);
+			this.DoubleClickModeBox.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -281,6 +325,11 @@
 		private System.Windows.Forms.OpenFileDialog ImportFromPackageFileDialog;
 		private System.Windows.Forms.FolderBrowserDialog ExportToPackgeFilesDialog;
 		private System.Windows.Forms.ToolStripMenuItem MenuStripFileImportFromPackageFileItem;
+		private System.Windows.Forms.ToolStripMenuItem MenuStripFileSaveAsItem;
+		private System.Windows.Forms.Panel DoubleClickModeBox;
+		private System.Windows.Forms.Label DoubleClickModeLabel;
+		public System.Windows.Forms.RadioButton DoubleClickModeOpenTranslatorButton;
+		public System.Windows.Forms.RadioButton DoubleClickModeOpenEditorButton;
 	}
 }
 

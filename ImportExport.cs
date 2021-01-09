@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Security;
@@ -137,7 +138,7 @@ namespace STBLXMLEditor {
 			}
 		}
 
-		public static STBLXMLFile ImportFromPackageFile (string importFilePath) {
+		public static STBLXMLFile ImportFromPackageFile (string importFilePath, System.Collections.IEnumerable importingLanguages) {
 			STBLXMLFile importedFile = new STBLXMLFile();
 
 
@@ -164,12 +165,16 @@ namespace STBLXMLEditor {
 					importFileReader.BaseStream.Seek(1, SeekOrigin.Current); // Skip the flags byte.
 					ushort entryLength = importFileReader.ReadUInt16();
 					string entryText = Encoding.UTF8.GetString(importFileReader.ReadBytes(entryLength));
-					importedFile.Entries.Add(
-						new STBLXMLEntry() {
-							Key = entryKey,
-							English = entryText
-						}
-					);
+
+					STBLXMLEntry entry = new STBLXMLEntry() {
+						Key = entryKey
+					};
+
+					foreach(STBL.Languages importingLanguage in importingLanguages) {
+						entry.SetText(importingLanguage, entryText);
+					}
+
+					importedFile.Entries.Add(entry);
 				}
 
 
