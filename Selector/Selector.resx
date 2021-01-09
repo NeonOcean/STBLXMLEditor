@@ -126,7 +126,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="MenuStripFileNewItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 22</value>
+    <value>209, 22</value>
   </data>
   <data name="MenuStripFileNewItem.Text" xml:space="preserve">
     <value>New</value>
@@ -135,7 +135,7 @@
     <value>Ctrl+O</value>
   </data>
   <data name="MenuStripFileOpenItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 22</value>
+    <value>209, 22</value>
   </data>
   <data name="MenuStripFileOpenItem.Text" xml:space="preserve">
     <value>Open...</value>
@@ -144,43 +144,49 @@
     <value>Ctrl+S</value>
   </data>
   <data name="MenuStripFileSaveItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 22</value>
+    <value>209, 22</value>
   </data>
   <data name="MenuStripFileSaveItem.Text" xml:space="preserve">
     <value>Save</value>
   </data>
-  <data name="MenuStripFileSaveAsItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 22</value>
-  </data>
-  <data name="MenuStripFileSaveAsItem.Text" xml:space="preserve">
-    <value>Save As...</value>
-  </data>
   <data name="MenuStripFileSpearator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 6</value>
+    <value>206, 6</value>
   </data>
   <data name="MenuStripFileEditMetaDataItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 22</value>
+    <value>209, 22</value>
   </data>
   <data name="MenuStripFileEditMetaDataItem.Text" xml:space="preserve">
     <value>Edit Meta Data...</value>
   </data>
   <data name="MenuStripFileSpearator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 6</value>
+    <value>206, 6</value>
   </data>
   <data name="MenuStripFileMergeItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 22</value>
+    <value>209, 22</value>
   </data>
   <data name="MenuStripFileMergeItem.Text" xml:space="preserve">
     <value>Merge With File...</value>
   </data>
+  <data name="MenuStripFileImportFromPackageFileItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 22</value>
+  </data>
+  <data name="MenuStripFileImportFromPackageFileItem.Text" xml:space="preserve">
+    <value>Import From Package File</value>
+  </data>
+  <data name="MenuStripFileExportToPackageFilesItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 22</value>
+  </data>
+  <data name="MenuStripFileExportToPackageFilesItem.Text" xml:space="preserve">
+    <value>Export To Package Files</value>
+  </data>
   <data name="MenuStripFileSpearator3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 6</value>
+    <value>206, 6</value>
   </data>
   <data name="MenuStripFileExitItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Alt+F4</value>
   </data>
   <data name="MenuStripFileExitItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 22</value>
+    <value>209, 22</value>
   </data>
   <data name="MenuStripFileExitItem.Text" xml:space="preserve">
     <value>Exit</value>
@@ -369,6 +375,18 @@
   <data name="&gt;&gt;FormStatusStrip.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <metadata name="ImportFromPackageFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>596, 17</value>
+  </metadata>
+  <data name="ImportFromPackageFileDialog.Filter" xml:space="preserve">
+    <value>All files|*.*</value>
+  </data>
+  <metadata name="ExportToPackgeFilesDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>812, 17</value>
+  </metadata>
+  <data name="ExportToPackgeFilesDialog.Description" xml:space="preserve">
+    <value>Select a directory in which to create the STBL package files.</value>
+  </data>
   <data name="EntryBrowser.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
@@ -385,7 +403,7 @@
     <value>EntryBrowser</value>
   </data>
   <data name="&gt;&gt;EntryBrowser.Type" xml:space="preserve">
-    <value>STBLXMLEditor.EntryBrowser, STBLXMLEditor, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>STBLXMLEditor.EntryBrowser, STBLXMLEditor, Version=1.0.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;EntryBrowser.Parent" xml:space="preserve">
     <value>$this</value>
@@ -401,9 +419,6 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>984, 586</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>800, 400</value>
@@ -435,16 +450,16 @@
   <data name="&gt;&gt;MenuStripFileSaveItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;MenuStripFileSaveAsItem.Name" xml:space="preserve">
-    <value>MenuStripFileSaveAsItem</value>
-  </data>
-  <data name="&gt;&gt;MenuStripFileSaveAsItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;MenuStripFileSpearator1.Name" xml:space="preserve">
     <value>MenuStripFileSpearator1</value>
   </data>
   <data name="&gt;&gt;MenuStripFileSpearator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuStripFileSpearator2.Name" xml:space="preserve">
+    <value>MenuStripFileSpearator2</value>
+  </data>
+  <data name="&gt;&gt;MenuStripFileSpearator2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;MenuStripFileEditMetaDataItem.Name" xml:space="preserve">
@@ -453,10 +468,10 @@
   <data name="&gt;&gt;MenuStripFileEditMetaDataItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;MenuStripFileSpearator2.Name" xml:space="preserve">
-    <value>MenuStripFileSpearator2</value>
+  <data name="&gt;&gt;MenuStripFileSpearator3.Name" xml:space="preserve">
+    <value>MenuStripFileSpearator3</value>
   </data>
-  <data name="&gt;&gt;MenuStripFileSpearator2.Type" xml:space="preserve">
+  <data name="&gt;&gt;MenuStripFileSpearator3.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;MenuStripFileMergeItem.Name" xml:space="preserve">
@@ -465,11 +480,17 @@
   <data name="&gt;&gt;MenuStripFileMergeItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;MenuStripFileSpearator3.Name" xml:space="preserve">
-    <value>MenuStripFileSpearator3</value>
+  <data name="&gt;&gt;MenuStripFileImportFromPackageFileItem.Name" xml:space="preserve">
+    <value>MenuStripFileImportFromPackageFileItem</value>
   </data>
-  <data name="&gt;&gt;MenuStripFileSpearator3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;MenuStripFileImportFromPackageFileItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuStripFileExportToPackageFilesItem.Name" xml:space="preserve">
+    <value>MenuStripFileExportToPackageFilesItem</value>
+  </data>
+  <data name="&gt;&gt;MenuStripFileExportToPackageFilesItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;MenuStripFileExitItem.Name" xml:space="preserve">
     <value>MenuStripFileExitItem</value>
@@ -518,6 +539,18 @@
   </data>
   <data name="&gt;&gt;FormStatusStripSelectedCount.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ImportFromPackageFileDialog.Name" xml:space="preserve">
+    <value>ImportFromPackageFileDialog</value>
+  </data>
+  <data name="&gt;&gt;ImportFromPackageFileDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ExportToPackgeFilesDialog.Name" xml:space="preserve">
+    <value>ExportToPackgeFilesDialog</value>
+  </data>
+  <data name="&gt;&gt;ExportToPackgeFilesDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Selector</value>

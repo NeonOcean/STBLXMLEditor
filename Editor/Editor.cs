@@ -32,7 +32,7 @@ namespace STBLXMLEditor {
 
 			LastKeyValue = STBLEntry.Key;
 			KeyDecimalTextBox.Text = STBLEntry.Key.ToString();
-			KeyHexadecimalTextBox.Text = STBLEntry.Key.ToString("x");
+			KeyHexadecimalTextBox.Text = STBLEntry.Key.ToString("x").ToUpper();
 
 			foreach(STBL.Languages language in STBL.GetAllLanguages()) {
 				string languageText = STBLEntry.GetText(language);
@@ -133,7 +133,7 @@ namespace STBLXMLEditor {
 
 			uint textValue = uint.Parse(decimalTextBox.Text);
 
-			hexadecimalTextBox.Text = textValue.ToString("x");
+			hexadecimalTextBox.Text = textValue.ToString("x").ToUpper();
 			lastDecimalValue = textValue;
 		}
 
@@ -166,7 +166,7 @@ namespace STBLXMLEditor {
 			uint randomizedKey = STBL.GetRandomUIntKey(blockedKeys: Loading.GetAllEntryKeys());
 
 			KeyDecimalTextBox.Text = randomizedKey.ToString();
-			KeyHexadecimalTextBox.Text = randomizedKey.ToString("x");
+			KeyHexadecimalTextBox.Text = randomizedKey.ToString("x").ToUpper();
 		}
 
 		private void LanguageSelector_SelectedIndexChanged (object sender, EventArgs e) {

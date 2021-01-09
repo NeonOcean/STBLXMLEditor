@@ -73,6 +73,12 @@
       <DependentUpon>Error.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms.cs" />
+    <Compile Include="Import\Import.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Import\Import.Designer.cs">
+      <DependentUpon>Import.cs</DependentUpon>
+    </Compile>
     <Compile Include="IO.cs" />
     <Compile Include="Localization.cs" />
     <Compile Include="Loading.cs" />
@@ -125,6 +131,7 @@
       <DependentUpon>SendTo.cs</DependentUpon>
     </Compile>
     <Compile Include="STBL.cs" />
+    <Compile Include="ImportExport.cs" />
     <Compile Include="Tools.cs" />
     <Compile Include="Translator\Translator.cs">
       <SubType>Form</SubType>
@@ -140,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Error\Error.resx">
       <DependentUpon>Error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Import\Import.resx">
+      <DependentUpon>Import.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MergeWith\MergeWith.resx">
       <DependentUpon>MergeWith.cs</DependentUpon>

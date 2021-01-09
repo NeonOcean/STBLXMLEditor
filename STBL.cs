@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
+using System.Text.RegularExpressions;
 using System.Xml.Serialization;
 
 namespace STBLXMLEditor {
@@ -30,6 +31,49 @@ namespace STBLXMLEditor {
 			SpanishMexico = 20,
 			Swedish = 21,
 			Thai = 22
+		}
+
+		public class LanguageFileName : IFormattable
+		{
+			public string Normal {
+				get; private set;
+			} = "";
+
+			public string Spaced {
+				get; private set;
+			} = "";
+
+			public string Underscored {
+				get; private set;
+			} = "";
+
+			public string Hyphenated {
+				get; private set;
+			} = "";
+
+			public LanguageFileName (Languages language) {
+				Normal = language.ToString();
+				Spaced = Regex.Replace(Normal, "(\\B[A-Z])", " $1");
+				Underscored = Spaced.Replace(" ", "_");
+				Hyphenated = Spaced.Replace(" ", "-");
+			}
+
+			public override string ToString () {
+				return Normal;
+			}
+
+			public string ToString (string format, IFormatProvider formatProvider) {
+				switch(format) {
+					case "Spaced":
+						return Spaced;
+					case "Underscored":
+						return Underscored;
+					case "Hyphenated":
+						return Hyphenated;
+				}
+
+				return Normal;
+			}
 		}
 
 		public static Random stblKeyGenerator = new Random();

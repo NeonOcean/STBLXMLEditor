@@ -143,6 +143,12 @@ Valid formatting placeholder are {0}, {0:Normal}, {0:Spaced}, {0:Underscored}, {
   <data name="EnglishLanguageName" xml:space="preserve">
     <value>English</value>
   </data>
+  <data name="ExportCreateSourceInfoDialogText" xml:space="preserve">
+    <value>Should we create the source info files needed for use with NeonOcean's package tool?</value>
+  </data>
+  <data name="ExportCreateSourceInfoDialogTitle" xml:space="preserve">
+    <value>Create Source Info Files?</value>
+  </data>
   <data name="FinnishLanguageName" xml:space="preserve">
     <value>Finnish</value>
   </data>
@@ -158,6 +164,12 @@ Valid formatting placeholder are {0}, {0:Normal}, {0:Spaced}, {0:Underscored}, {
   <data name="HungarianLanguageName" xml:space="preserve">
     <value>Hungarian</value>
   </data>
+  <data name="ImportNoLanguagesSelectedText" xml:space="preserve">
+    <value>No languages have been selected to for this file to be imported under.</value>
+  </data>
+  <data name="ImportNoOrInvalidFileText" xml:space="preserve">
+    <value>No file or an invalid file has been selected.</value>
+  </data>
   <data name="ItalianLanguageName" xml:space="preserve">
     <value>Italian</value>
   </data>
@@ -171,7 +183,7 @@ Valid formatting placeholder are {0}, {0:Normal}, {0:Spaced}, {0:Underscored}, {
     <value>No languages have been selected to merge.</value>
   </data>
   <data name="MergeWithNoOrInvalidFileText" xml:space="preserve">
-    <value>No file or and invalid file has been selected.</value>
+    <value>No file or an invalid file has been selected.</value>
   </data>
   <data name="NorwegianLanguageName" xml:space="preserve">
     <value>Norwegian</value>
@@ -204,7 +216,7 @@ Valid formatting placeholder are {0}, {0:Normal}, {0:Spaced}, {0:Underscored}, {
     <value>No languages have been selected to be sent off.</value>
   </data>
   <data name="SendToNoOrInvalidFileText" xml:space="preserve">
-    <value>No file or and invalid file has been selected.</value>
+    <value>No file or an invalid file has been selected.</value>
   </data>
   <data name="SpanishMexicoLanguageName" xml:space="preserve">
     <value>Spanish Mexico</value>

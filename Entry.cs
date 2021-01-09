@@ -1,6 +1,8 @@
 ﻿using System;
 using System.IO;
 using System.Windows.Forms;
+using System.Text;
+using System.Globalization;
 
 namespace STBLXMLEditor {
 	public static class Entry {
@@ -22,6 +24,8 @@ namespace STBLXMLEditor {
 				if(TargetFilePath != null) {
 					Loading.OpenFile(TargetFilePath);
 				}
+
+				
 			} catch{ }
 
 			Application.EnableVisualStyles();

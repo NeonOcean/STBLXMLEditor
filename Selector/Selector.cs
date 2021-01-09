@@ -166,6 +166,25 @@ namespace STBLXMLEditor {
 			EntryBrowser.RefreshItems();
 		}
 
+		public void ExportToPackageFiles () {
+			ExportToPackgeFilesDialog.ShowDialog();
+			string exportPackageFilesPath = ExportToPackgeFilesDialog.SelectedPath;
+			
+			string createSourceInfoDialogTitle = Localization.GetString("ExportCreateSourceInfoMessageTitle");
+			string createSourceInfoDialogText = Localization.GetString("ExportCreateSourceInfoMessageText");
+
+			DialogResult createSourceInfoDialogResult = MessageBox.Show(createSourceInfoDialogText, createSourceInfoDialogTitle, MessageBoxButtons.YesNo);
+
+			ImportExport.ExportToPackageFiles(Loading.Data, exportPackageFilesPath, createSourceInfoDialogResult == DialogResult.Yes);
+		}
+
+		public void ImportFromPackageFile () {
+			Import importDialog = new Import();
+			importDialog.ShowDialog();
+
+			EntryBrowser.SetupRows();
+		}
+
 		public bool Exit () {
 			if(Loading.IsDirty) {
 				DialogResult unsavedDialogResult = ShowUnsavedDialog();
@@ -188,20 +207,28 @@ namespace STBLXMLEditor {
 			e.Cancel = !Exit();
 		}
 
-		private void MenuStripNewItem_Click (object sender, EventArgs e) {
+		private void MenuStripFileNewItem_Click (object sender, EventArgs e) {
 			NewFile();
 		}
 
-		private void MenuStripOpenItem_Click (object sender, EventArgs e) {
+		private void MenuStripFileOpenItem_Click (object sender, EventArgs e) {
 			OpenFile();
 		}
 
-		private void MenuStripSaveItem_Click (object sender, EventArgs e) {
+		private void MenuStripFileSaveItem_Click (object sender, EventArgs e) {
 			SaveFile();
 		}
 
-		private void MenuStripSaveAsItem_Click (object sender, EventArgs e) {
+		private void MenuStripFileSaveAsItem_Click (object sender, EventArgs e) {
 			SaveAsFile();
+		}
+
+		private void MenuStripFileExportToPackageFilesItem_Click (object sender, EventArgs e) {
+			ExportToPackageFiles();
+		}
+
+		private void MenuStripFileImportFromPackageFileItem_Click (object sender, EventArgs e) {
+			ImportFromPackageFile();
 		}
 
 		private void MenuStripFileMergeItem_Click (object sender, EventArgs e) {

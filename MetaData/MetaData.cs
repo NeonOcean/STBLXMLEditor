@@ -24,11 +24,11 @@ namespace STBLXMLEditor {
 
 			LastSTBLGroupValue = STBLFile.STBLGroup;
 			STBLGroupDecimalTextBox.Text = STBLFile.STBLGroup.ToString("0");
-			STBLGroupHexadecimalTextBox.Text = STBLFile.STBLGroup.ToString("x");
+			STBLGroupHexadecimalTextBox.Text = STBLFile.STBLGroup.ToString("x").ToUpper();
 
 			LastSTBLInstanceValue = STBLFile.STBLInstance;
 			STBLInstanceDecimalTextBox.Text = STBLFile.STBLInstance.ToString("0");
-			STBLInstanceHexadecimalTextBox.Text = STBLFile.STBLInstance.ToString("x");
+			STBLInstanceHexadecimalTextBox.Text = STBLFile.STBLInstance.ToString("x").ToUpper();
 
 			STBLNameTextBox.Text = STBLFile.STBLName;
 
@@ -40,11 +40,11 @@ namespace STBLXMLEditor {
 
 			LastIdentifiersGroupValue = STBLFile.IdentifiersGroup;
 			IdentifiersGroupDecimalTextBox.Text = STBLFile.IdentifiersGroup.ToString("0");
-			IdentifiersGroupHexadecimalTextBox.Text = STBLFile.IdentifiersGroup.ToString("x");
+			IdentifiersGroupHexadecimalTextBox.Text = STBLFile.IdentifiersGroup.ToString("x").ToUpper();
 
 			LastIdentifiersInstanceValue = STBLFile.IdentifiersInstance;
 			IdentifiersInstanceDecimalTextBox.Text = STBLFile.IdentifiersInstance.ToString("0");
-			IdentifiersInstanceHexadecimalTextBox.Text = STBLFile.IdentifiersInstance.ToString("x");
+			IdentifiersInstanceHexadecimalTextBox.Text = STBLFile.IdentifiersInstance.ToString("x").ToUpper();
 
 			IdentifiersNameTextBox.Text = STBLFile.IdentifiersName;
 		}
@@ -128,12 +128,12 @@ namespace STBLXMLEditor {
 
 			uint textValue = uint.Parse(decimalTextBox.Text);
 
-			hexadecimalTextBox.Text = textValue.ToString("x");
+			hexadecimalTextBox.Text = textValue.ToString("x").ToUpper();
 			lastDecimalValue = textValue;
 		}
 
 		private void FinalizeUIntHexadecimalTextBox (TextBox hexadecimalTextBox, ref uint lastHexadecimalValue, TextBox decimalTextBox) {
-			FixUIntHexadecimalTextBox(hexadecimalTextBox, lastHexadecimalValue.ToString("x"));
+			FixUIntHexadecimalTextBox(hexadecimalTextBox, lastHexadecimalValue.ToString("x").ToUpper());
 
 			uint textValue = uint.Parse(hexadecimalTextBox.Text, NumberStyles.HexNumber | NumberStyles.AllowHexSpecifier);
 
@@ -214,12 +214,12 @@ namespace STBLXMLEditor {
 
 			ulong textValue = ulong.Parse(decimalTextBox.Text);
 
-			hexadecimalTextBox.Text = textValue.ToString("x");
+			hexadecimalTextBox.Text = textValue.ToString("x").ToUpper();
 			lastDecimalValue = textValue;
 		}
 
 		private void FinalizeULongHexadecimalTextBox (TextBox hexadecimalTextBox, ref ulong lastHexadecimalValue, TextBox decimalTextBox) {
-			FixULongHexadecimalTextBox(hexadecimalTextBox, lastHexadecimalValue.ToString("x"));
+			FixULongHexadecimalTextBox(hexadecimalTextBox, lastHexadecimalValue.ToString("x").ToUpper());
 
 			ulong textValue = ulong.Parse(hexadecimalTextBox.Text, NumberStyles.HexNumber | NumberStyles.AllowHexSpecifier);
 
@@ -289,7 +289,7 @@ namespace STBLXMLEditor {
 			ulong randomizedKey = STBL.GetRandomULongKey();
 
 			STBLInstanceDecimalTextBox.Text = randomizedKey.ToString("0");
-			STBLInstanceHexadecimalTextBox.Text = randomizedKey.ToString("x");
+			STBLInstanceHexadecimalTextBox.Text = randomizedKey.ToString("x").ToUpper();
 		}
 
 		private void STBLNameTextBox_TextChanged (object sender, EventArgs e) {
@@ -332,7 +332,7 @@ namespace STBLXMLEditor {
 			ulong randomizedKey = STBL.GetRandomULongKey();
 
 			IdentifiersInstanceDecimalTextBox.Text = randomizedKey.ToString("0");
-			IdentifiersInstanceHexadecimalTextBox.Text = randomizedKey.ToString("x");
+			IdentifiersInstanceHexadecimalTextBox.Text = randomizedKey.ToString("x").ToUpper();
 		}
 
 		private void FormOkButton_Click (object sender, EventArgs e) {

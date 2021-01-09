@@ -19,7 +19,7 @@ namespace STBLXMLEditor.Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Strings {
@@ -135,6 +135,24 @@ namespace STBLXMLEditor.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Should we create the source info files needed for use with NeonOcean&apos;s package tool?.
+        /// </summary>
+        internal static string ExportCreateSourceInfoDialogText {
+            get {
+                return ResourceManager.GetString("ExportCreateSourceInfoDialogText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create Source Info Files?.
+        /// </summary>
+        internal static string ExportCreateSourceInfoDialogTitle {
+            get {
+                return ResourceManager.GetString("ExportCreateSourceInfoDialogTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Finnish.
         /// </summary>
         internal static string FinnishLanguageName {
@@ -180,6 +198,24 @@ namespace STBLXMLEditor.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No languages have been selected to for this file to be imported under..
+        /// </summary>
+        internal static string ImportNoLanguagesSelectedText {
+            get {
+                return ResourceManager.GetString("ImportNoLanguagesSelectedText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No file or an invalid file has been selected..
+        /// </summary>
+        internal static string ImportNoOrInvalidFileText {
+            get {
+                return ResourceManager.GetString("ImportNoOrInvalidFileText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Italian.
         /// </summary>
         internal static string ItalianLanguageName {
@@ -216,7 +252,7 @@ namespace STBLXMLEditor.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No file or and invalid file has been selected..
+        ///   Looks up a localized string similar to No file or an invalid file has been selected..
         /// </summary>
         internal static string MergeWithNoOrInvalidFileText {
             get {
@@ -315,7 +351,7 @@ namespace STBLXMLEditor.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No file or and invalid file has been selected..
+        ///   Looks up a localized string similar to No file or an invalid file has been selected..
         /// </summary>
         internal static string SendToNoOrInvalidFileText {
             get {

@@ -148,7 +148,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;FormCancelButton.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="FormOkButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -178,13 +178,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;FormOkButton.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <metadata name="OpenSTBLXMLDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <data name="OpenSTBLXMLDialog.Filter" xml:space="preserve">
-    <value>XML files (.xml)|*.xml|STBL files (.stbl)|*.stbl|Binary files (.binary)|*.binary|All files|*.*</value>
+    <value>Binary files (.binary)|*.binary|STBL files (.stbl)|*.stbl|All files|*.*</value>
   </data>
   <data name="FilePathTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -208,7 +208,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;FilePathTextBox.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="FilePathSelectButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -235,7 +235,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;FilePathSelectButton.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="TextPriorityExistingRadioButton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -267,6 +267,42 @@
   <data name="TextPriorityGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
+  <data name="&gt;&gt;TextPriorityNewRadioButton.Name" xml:space="preserve">
+    <value>TextPriorityNewRadioButton</value>
+  </data>
+  <data name="&gt;&gt;TextPriorityNewRadioButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextPriorityNewRadioButton.Parent" xml:space="preserve">
+    <value>TextPriorityGroupBox</value>
+  </data>
+  <data name="&gt;&gt;TextPriorityNewRadioButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TextPriorityGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 74</value>
+  </data>
+  <data name="TextPriorityGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>356, 88</value>
+  </data>
+  <data name="TextPriorityGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="TextPriorityGroupBox.Text" xml:space="preserve">
+    <value>Text Priority</value>
+  </data>
+  <data name="&gt;&gt;TextPriorityGroupBox.Name" xml:space="preserve">
+    <value>TextPriorityGroupBox</value>
+  </data>
+  <data name="&gt;&gt;TextPriorityGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextPriorityGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TextPriorityGroupBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="TextPriorityNewRadioButton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -294,141 +330,6 @@
   <data name="&gt;&gt;TextPriorityNewRadioButton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="TextPriorityGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>192, 74</value>
-  </data>
-  <data name="TextPriorityGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 88</value>
-  </data>
-  <data name="TextPriorityGroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="TextPriorityGroupBox.Text" xml:space="preserve">
-    <value>Text Priority</value>
-  </data>
-  <data name="&gt;&gt;TextPriorityGroupBox.Name" xml:space="preserve">
-    <value>TextPriorityGroupBox</value>
-  </data>
-  <data name="&gt;&gt;TextPriorityGroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TextPriorityGroupBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;TextPriorityGroupBox.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="MergeByIdentifierMatchCaseRadioButton.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="MergeByIdentifierMatchCaseRadioButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="MergeByIdentifierMatchCaseRadioButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 65</value>
-  </data>
-  <data name="MergeByIdentifierMatchCaseRadioButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 17</value>
-  </data>
-  <data name="MergeByIdentifierMatchCaseRadioButton.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="MergeByIdentifierMatchCaseRadioButton.Text" xml:space="preserve">
-    <value>Identifier (Match Case)</value>
-  </data>
-  <data name="&gt;&gt;MergeByIdentifierMatchCaseRadioButton.Name" xml:space="preserve">
-    <value>MergeByIdentifierMatchCaseRadioButton</value>
-  </data>
-  <data name="&gt;&gt;MergeByIdentifierMatchCaseRadioButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MergeByIdentifierMatchCaseRadioButton.Parent" xml:space="preserve">
-    <value>MergeByGroupBox</value>
-  </data>
-  <data name="&gt;&gt;MergeByIdentifierMatchCaseRadioButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="MergeByIdentifierRadioButton.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="MergeByIdentifierRadioButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 42</value>
-  </data>
-  <data name="MergeByIdentifierRadioButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 17</value>
-  </data>
-  <data name="MergeByIdentifierRadioButton.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="MergeByIdentifierRadioButton.Text" xml:space="preserve">
-    <value>Identifier</value>
-  </data>
-  <data name="&gt;&gt;MergeByIdentifierRadioButton.Name" xml:space="preserve">
-    <value>MergeByIdentifierRadioButton</value>
-  </data>
-  <data name="&gt;&gt;MergeByIdentifierRadioButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MergeByIdentifierRadioButton.Parent" xml:space="preserve">
-    <value>MergeByGroupBox</value>
-  </data>
-  <data name="&gt;&gt;MergeByIdentifierRadioButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="MergeByKeyRadioButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left</value>
-  </data>
-  <data name="MergeByKeyRadioButton.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="MergeByKeyRadioButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 19</value>
-  </data>
-  <data name="MergeByKeyRadioButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 17</value>
-  </data>
-  <data name="MergeByKeyRadioButton.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="MergeByKeyRadioButton.Text" xml:space="preserve">
-    <value>Key</value>
-  </data>
-  <data name="&gt;&gt;MergeByKeyRadioButton.Name" xml:space="preserve">
-    <value>MergeByKeyRadioButton</value>
-  </data>
-  <data name="&gt;&gt;MergeByKeyRadioButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MergeByKeyRadioButton.Parent" xml:space="preserve">
-    <value>MergeByGroupBox</value>
-  </data>
-  <data name="&gt;&gt;MergeByKeyRadioButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="MergeByGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 74</value>
-  </data>
-  <data name="MergeByGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 88</value>
-  </data>
-  <data name="MergeByGroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="MergeByGroupBox.Text" xml:space="preserve">
-    <value>Mergy By</value>
-  </data>
-  <data name="&gt;&gt;MergeByGroupBox.Name" xml:space="preserve">
-    <value>MergeByGroupBox</value>
-  </data>
-  <data name="&gt;&gt;MergeByGroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MergeByGroupBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;MergeByGroupBox.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="LanguagesButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
@@ -445,7 +346,7 @@
     <value>5</value>
   </data>
   <data name="LanguagesButton.Text" xml:space="preserve">
-    <value>Select Languages</value>
+    <value>Import As Language</value>
   </data>
   <data name="&gt;&gt;LanguagesButton.Name" xml:space="preserve">
     <value>LanguagesButton</value>
@@ -459,8 +360,38 @@
   <data name="&gt;&gt;LanguagesButton.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="FilePathLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FilePathLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 9</value>
+  </data>
+  <data name="FilePathLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 13</value>
+  </data>
+  <data name="FilePathLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="FilePathLabel.Text" xml:space="preserve">
+    <value>Importing File:</value>
+  </data>
+  <data name="&gt;&gt;FilePathLabel.Name" xml:space="preserve">
+    <value>FilePathLabel</value>
+  </data>
+  <data name="&gt;&gt;FilePathLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FilePathLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;FilePathLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="CreateMissingEntriesCheckBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="CreateMissingEntriesCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="CreateMissingEntriesCheckBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 51</value>
@@ -469,7 +400,7 @@
     <value>130, 17</value>
   </data>
   <data name="CreateMissingEntriesCheckBox.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="CreateMissingEntriesCheckBox.Text" xml:space="preserve">
     <value>Create Missing Entries</value>
@@ -484,33 +415,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;CreateMissingEntriesCheckBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="FilePathLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="FilePathLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 9</value>
-  </data>
-  <data name="FilePathLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 13</value>
-  </data>
-  <data name="FilePathLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="FilePathLabel.Text" xml:space="preserve">
-    <value>Merging File:</value>
-  </data>
-  <data name="&gt;&gt;FilePathLabel.Name" xml:space="preserve">
-    <value>FilePathLabel</value>
-  </data>
-  <data name="&gt;&gt;FilePathLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FilePathLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;FilePathLabel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -529,7 +433,7 @@
     <value>400, 310</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Merge With File</value>
+    <value>Import Package File</value>
   </data>
   <data name="&gt;&gt;OpenSTBLXMLDialog.Name" xml:space="preserve">
     <value>OpenSTBLXMLDialog</value>
@@ -538,7 +442,7 @@
     <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>MergeWith</value>
+    <value>Import</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
